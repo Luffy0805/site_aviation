@@ -1,0 +1,16 @@
+/* ===== Fondations : variables, reset, typographie, fond ===== */
+:root{--bg:#070c18;--panel:#0d1628;--line:#22314f;--tx:#e8eef8;--mut:#8fa1c0;--steel:#9db4d6;--amb:#ffb347;--sky:#2c4a7c;--r:6px}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font:16px/1.6 "Segoe UI",system-ui,-apple-system,sans-serif}
+h1,h2,h3{font-family:Palatino,"Palatino Linotype",Georgia,serif;font-weight:600;letter-spacing:-.01em;line-height:1.1}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--amb);outline-offset:2px}
+section{padding:90px 5vw}
+section>h2{font-size:clamp(1.8rem,3.5vw,2.6rem);margin-bottom:8px}
+section>p.sub{color:var(--mut);margin-bottom:34px;max-width:60ch}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+[hidden]{display:none!important}
+body::before{content:"";position:fixed;inset:-20%;z-index:-1;background:radial-gradient(40% 40% at 20% 20%,#2c4a7c66,transparent),radial-gradient(30% 30% at 80% 30%,#ffb34720,transparent),radial-gradient(45% 45% at 50% 95%,#1d3a6966,transparent);filter:blur(30px);animation:mesh 22s ease-in-out infinite alternate}
+@keyframes mesh{to{transform:translate(4%,-3%) rotate(8deg) scale(1.12)}}
+html,body{overflow-anchor:none}

@@ -1,0 +1,16 @@
+/* ===== Page aéroports : carte du monde, galerie ===== */
+.zbox2 img.aph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;background:#050a14}
+.ap{cursor:pointer}
+.zbox2 img.aph{transition:opacity .25s}
+.gi:hover .zbox2 img.aph{opacity:0}
+.gi:has(.hasph){cursor:zoom-in}
+.mapw{position:relative;max-width:1100px;border:1px solid #ffffff14;border-radius:var(--r);overflow:hidden;background:#050a14}
+#wmap{display:block;width:100%;height:auto;cursor:grab;touch-action:none}#wmap.dg{cursor:grabbing}
+#wmap .sph{fill:#07101f;stroke:#22314f}#wmap .grt{fill:none;stroke:#ffffff12;stroke-width:.4}#wmap .lnd{fill:#13233f;stroke:#4b6a9b;stroke-width:.5}
+.apd{fill:#ffb347;stroke:#fff;stroke-width:1.2;cursor:pointer;transition:fill .2s}.ap:hover .apd{fill:#fff}
+.apl{font:600 9px sans-serif;fill:#e8eef8;text-anchor:middle;opacity:0;pointer-events:none;transition:opacity .2s}.ap:hover .apl,#wmap.zm .apl{opacity:1}
+.mapc{position:absolute;top:12px;right:12px;display:flex;flex-direction:column;gap:6px}
+.mapc button{width:36px;height:36px;border-radius:8px;background:#0d1628d9;border:1px solid var(--line);color:var(--tx);font-size:1.1rem;cursor:pointer}.mapc button:hover{border-color:var(--amb)}
+.zbox2.hasph{aspect-ratio:19/10}
+.zbox2{position:relative;border:1px solid #ffffff22;border-radius:6px;background:#050a14 repeating-linear-gradient(0deg,#ffffff06 0 1px,transparent 1px 18px);aspect-ratio:3/2;overflow:hidden}.zbox2 svg{display:block;width:100%;height:100%}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}.gi span{display:block;margin-top:6px;font-size:.82rem;color:var(--mut)}

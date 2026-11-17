@@ -1,0 +1,26 @@
+/* ===== Photos par page (dossier images/) ===== */
+const PHOTOS={
+ rafale:[["rafale_montagne.jpg","Rafale en montagne",1.800,"top",2000],["rafale_avant.jpg","Rafale, vue de face",1.619,"top",1360],["rafale_haute_altitude.jpg","Rafale en haute altitude",1.499,"top",1000],["patrouille_de_rafale.webp","Rafales en formation",1.504,"mid",1600]],
+ mirage:[["mirage2000_montée.jpg","Mirage 2000 en montée",1.564,"top",1600],["mirage2000_patrouille.webp","Mirage 2000 en patrouille",1.502,"top",2004],["mirage III.webp","Mirage III",1.529,"mid",1000],["mirage2000_D.jpg","Mirage 2000D",1.698,"mid",1104],["mirage2000_N.jpg","Mirage 2000N",1.500,"mid",1918],["mirage200_boom_vertical.jpg","Mirage 2000, photo verticale",0.667,"side",3986]],
+ dassault:[["rafale_solo_display_2026.jpg","Rafale, démonstration solo 2026",1.739,"top",1200]],
+ chasseurs:[["f15_virage.jpg","F-15 en virage",1.519,"top",1200],["f18_super_hornet.jpg","F/A-18 Super Hornet",1.500,"top",678],["f22_virage.jpg","F-22 en virage",1.500,"top",2000],["f15.jpg","F-15",1.429,"top",330]],
+ typhoon:[["typhoon_virage.jpg","Eurofighter Typhoon en virage",1.500,"top",1320],["typhoon.jpg","Eurofighter Typhoon",1.499,"top",1024,"50% 10%"]],
+ f35:[["F-35B-VTOL-On-Carrier.webp","F-35B sur porte-avions",1.500,"top",1600],["f35_au_sol.jpg","F-35 au sol",1.778,"top",1536]],
+ f22:[["Lockheed_Martin_F-22A_Raptor_JSOH.jpg","Lockheed Martin F-22A Raptor",1.502,"top",2736],["f22_virage.jpg","F-22 en virage",1.500,"top",2000]],
+ gripen:[["gripen_au_sol.jpg","Gripen au sol",1.535,"top",3008],["gripen_virage.jpg","Gripen en virage",1.498,"top",800]],
+ missiles:[["meteor.jpg","Missile Meteor",1.500,"top",1731],["mica.jpg","Missile MICA",1.500,"top",2800],["scalp.jpg","Missile SCALP",2.515,"top",2286],["exocet.jpg","Missile Exocet",1.529,"top",685]],
+ atmosphere:[["mur_du_son.jpg","Mur du son",1.600,"top",1728]],
+ records:[["sr71.jpg","SR-71 Blackbird",1.276,"top",5100],["x-1.jpg","Bell X-1",1.333,"top",2969]],
+ a320:[["A320neo-easyjet.jpg","A320neo d’easyJet",1.618,"top",2048]],
+ b737:[["b737_ryanair_decollage.webp","Boeing 737 de Ryanair au décollage",1.778,"top",1200]],
+ liners:[["a350-1000_airbus.jpg","Airbus A350-1000",1.500,"top",2048],["b787_aircanada.jpg","Boeing 787 d’Air Canada",1.333,"top",2400],["a330_delta.jpg","Airbus A330 de Delta",1.778,"top",1600]],
+ compagnies:[["a350_airfrance_coucherdesoleil.jpg","A350 d’Air France au coucher du soleil",1.778,"top",2400],["b777_emirates.jpg","Boeing 777 d’Emirates",1.462,"top",1800],["B747_lufthansa.jpg","Boeing 747 de Lufthansa",1.500,"top",1200]],
+ a380:[["a380_decollage.jpg","A380 au décollage",1.778,"top",1280],["a380_face.jpg","A380, vue de face",1.501,"top",1280],["a380_en_vol_carre.jpg","A380 en vol",1.000,"side",1200]],
+ concorde:[["concorde_vol.jpg","Concorde en vol",1.808,"top",1392],["concorde_decollage.jpg","Concorde au décollage",1.733,"top",5048]],
+ a400m:[["a400m_atlas.jpg","A400M Atlas",1.532,"top",2500],["a400m_neige.jpg","A400M sur piste enneigée",1.599,"top",1079]],
+ a330mrtt:[["a330mrtt.jpg","A330 MRTT",1.681,"top",1000],["a330mrtt_ravitaillement.webp","A330 MRTT en ravitaillement",1.500,"top",1800]],
+ transport:[["c17.jpg","C-17 Globemaster III",1.362,"top",2974],["a400m_atlas.jpg","A400M Atlas",1.532,"top",2500]],
+ drones:[["reaper_envol.jpg","MQ-9 Reaper en vol",1.882,"top",1786],["reaper_ausol.webp","MQ-9 Reaper au sol",1.978,"top",900]],
+ patrouilles:[["rafale_solo_display_2026.jpg","Rafale solo display 2026",1.739,"top",1200],["rafale_solo_display_2026_montée.jpg","Rafale solo display 2026 en montée",1.499,"top",2048],["patrouilledefrance.jpg","Patrouille de France",1.525,"top",1200],["patrouilledefrance_montagne.jpg","Patrouille de France en montagne",1.778,"top",2560],["blue_angels_vertical.jpg","Blue Angels",0.666,"side",2000],["blueangelsXthunderbird.jpg","Blue Angels et Thunderbirds",1.503,"side",2011],["thunderbird_colle.jpg","Thunderbirds",1.444,"side",4059]],
+ "porte-avions":[["rafale_porte_avion.jpg","Rafale sur porte-avions",2.285,"top",3094],["porte_avion_cdg_haut.jpg","Charles de Gaulle, vue de dessus",1.500,"top",2048],["rafaleM_catapultage.jpg","Rafale M au catapultage",1.500,"mid",2048],["rafaleM_appontage.jpg","Rafale M à l’appontage",1.505,"mid",1500],["hawkeye.jpg","E-2C Hawkeye",1.504,"mid",3008]]
+};

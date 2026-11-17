@@ -1,0 +1,16 @@
+/* ===== Page atmosphère ===== */
+.atm{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:30px;max-width:1100px}
+.atm svg{width:100%;height:auto;background:var(--panel);border-radius:var(--r)}
+.atm text{fill:var(--tx);font-family:"Segoe UI",system-ui,sans-serif}
+.atm .m{fill:var(--mut);font-size:11px}
+.atm .it{font-size:12.5px}
+.atm .bn{font:600 17px Palatino,Georgia,serif}
+@media(max-width:860px){.atm{grid-template-columns:1fr}}
+.atm .band{transition:filter .3s}.atm .band:hover{filter:brightness(1.4)}
+.atm .itm{opacity:0;animation:fi .6s forwards;cursor:pointer;transform-box:fill-box;transform-origin:left center;transition:transform .25s}
+.atm .itm:hover{transform:scale(1.22)}.atm .itm:hover text{fill:#fff;font-weight:700}
+@keyframes fi{to{opacity:1}}
+.crv{stroke-dasharray:1;stroke-dashoffset:1;animation:dr 2.6s ease-out forwards}@keyframes dr{to{stroke-dashoffset:0}}
+.arow{margin-top:14px;display:flex;flex-wrap:wrap;gap:18px;align-items:center}
+.arow input[type=range]{min-width:260px;accent-color:#ffb347}
+.atm .band:hover{filter:none;stroke:#ffb347;stroke-width:3}

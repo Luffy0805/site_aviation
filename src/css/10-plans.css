@@ -1,0 +1,39 @@
+/* ===== Plans interactifs (blueprint) et zoom ===== */
+.plan{display:grid;grid-template-columns:minmax(0,330px) 1fr;gap:30px;align-items:center;padding:22px;border-radius:var(--r);background:var(--panel) repeating-linear-gradient(0deg,#ffffff08 0 1px,transparent 1px 20px),repeating-linear-gradient(90deg,#ffffff08 0 1px,transparent 1px 20px)}
+.plan.v{grid-template-columns:1fr}
+.plan svg{width:100%;height:auto}.plan .ln{fill:none;stroke:#9db4d6;stroke-width:1.2;stroke-linejoin:round}
+.plan .sp{fill:#ffb347;cursor:pointer;transition:r .15s}.plan .sp:hover,.plan .sp.on{fill:#fff;r:8}
+.plan .sn{fill:#06101f;font:700 9px sans-serif;pointer-events:none;text-anchor:middle}
+.pinfo{min-height:90px;color:var(--mut)}.pinfo b{display:block;color:var(--tx);font:600 1.3rem Palatino,Georgia,serif;margin-bottom:6px}
+.plan{position:relative;border:1px solid #ffffff14}.plan::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(240px at var(--mx,-999px) var(--my,-999px),#ffffff14,transparent 70%)}
+.plan.z{grid-template-columns:1fr}.zw{display:grid;grid-template-columns:minmax(0,360px) 1fr;gap:26px;align-items:center}
+.zbox{position:relative;border:1px solid #ffffff22;border-radius:var(--r);background:#050a14;aspect-ratio:16/10;overflow:hidden}
+.zbox svg{position:absolute;inset:0;width:100%;height:100%}
+.zbox::before,.zbox::after{content:"";position:absolute;width:16px;height:16px;border:2px solid var(--amb);z-index:2}
+.zbox::before{top:6px;left:6px;border-right:0;border-bottom:0}.zbox::after{bottom:6px;right:6px;border-left:0;border-top:0}
+.zbox text{fill:#9db4d6;font:7px sans-serif}
+.hp{fill:#ffb347;cursor:pointer;transition:r .2s,fill .2s}.hp:hover,.hp.on{fill:#fff;r:23}
+.hn{fill:#06101f;font:700 20px sans-serif;text-anchor:middle;pointer-events:none}
+#rplan{filter:drop-shadow(0 0 4px #4aa3ff55)}
+.hp{transform-box:fill-box;transform-origin:center;transition:transform .2s,fill .2s}.hp:hover,.hp.on{fill:#fff;transform:scale(1.45)}
+.pop{position:fixed;top:0;left:0;z-index:80;width:min(430px,92vw);padding:12px;background:#070c18ef;backdrop-filter:blur(14px);border:1px solid #ffffff30;border-radius:10px;box-shadow:0 20px 60px #000b;pointer-events:none}
+.pop .pinfo{min-height:0;margin-top:10px;font-size:.9rem}.pop .pinfo b{font-size:1.2rem}
+/* plans : tracé, balayage, grille et réticule au curseur */
+.draw .dr{stroke-dasharray:1;stroke-dashoffset:1;fill-opacity:0}
+.draw .fd{opacity:0}
+.draw g[data-i]{opacity:0}
+.draw.go .dr{animation:drawIn 1.5s cubic-bezier(.5,0,.2,1) forwards,fillIn .9s ease forwards;animation-delay:var(--d,0s),calc(var(--d,0s) + .9s)}
+.draw.go .fd{animation:fadeIn .9s ease forwards;animation-delay:calc(var(--d,0s) + 1s)}
+.draw.go g[data-i]{animation:spIn .55s cubic-bezier(.3,1.4,.5,1) forwards;animation-delay:calc(2.6s + var(--k,0)*.12s);transform-box:fill-box;transform-origin:center}
+@keyframes drawIn{to{stroke-dashoffset:0}}
+@keyframes fillIn{to{fill-opacity:var(--fo,1)}}
+@keyframes fadeIn{to{opacity:1}}
+@keyframes spIn{from{opacity:0;transform:scale(.3)}to{opacity:1;transform:none}}
+.scan{clip-path:inset(0 100% 0 0)}
+.scan.go{animation:scanIn 1.9s cubic-bezier(.5,0,.2,1) forwards}
+@keyframes scanIn{to{clip-path:inset(0 0 0 0)}}
+.plan .scl{position:absolute;top:0;bottom:0;width:2px;pointer-events:none;background:linear-gradient(transparent,var(--amb),transparent);box-shadow:0 0 18px 4px #ffb34755;z-index:2}
+.plan.bp::before{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;background:repeating-linear-gradient(0deg,#8fb8ff40 0 1px,transparent 1px 20px),repeating-linear-gradient(90deg,#8fb8ff40 0 1px,transparent 1px 20px);-webkit-mask-image:radial-gradient(230px at var(--mx,-999px) var(--my,-999px),#000,transparent);mask-image:radial-gradient(230px at var(--mx,-999px) var(--my,-999px),#000,transparent)}
+.plan.bp::after{background:radial-gradient(240px at var(--mx,-999px) var(--my,-999px),#ffffff14,transparent 70%),linear-gradient(#ffb3475c,#ffb3475c) var(--mx,-999px) 0/1px 100% no-repeat,linear-gradient(#ffb3475c,#ffb3475c) 0 var(--my,-999px)/100% 1px no-repeat}
+.plan .hud{position:absolute;left:16px;bottom:12px;z-index:3;pointer-events:none;font:12px/1 ui-monospace,Consolas,monospace;color:var(--amb);letter-spacing:.04em;opacity:0;transition:opacity .2s}
+.plan.bp:hover .hud{opacity:1}

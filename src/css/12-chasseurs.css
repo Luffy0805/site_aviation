@@ -1,0 +1,13 @@
+/* ===== Page chasseurs : filtres, duel ===== */
+.flt{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px;max-width:1100px}
+.flt button{background:none;border:1px solid var(--line);color:var(--mut);padding:6px 13px;border-radius:99px;cursor:pointer;font:inherit}
+.flt button[aria-pressed=true]{background:var(--steel);color:#06101f;border-color:var(--steel)}
+.dl.t i{background:linear-gradient(90deg,#3fbf9f,#b2f0dc)}.dl.t span{color:var(--tx)}
+.dh,.dr{display:grid;grid-template-columns:1fr 150px 1fr;gap:12px;align-items:center;margin:9px 0}
+.dh b{font:600 1.4rem Palatino,Georgia,serif}.dh b:first-child{text-align:right}
+.dl{display:flex;align-items:center;gap:8px;justify-content:flex-end}.dl.rr{justify-content:flex-start}
+.dl i{height:16px;border-radius:3px;background:#2c5a9688;transition:width .7s}.dl.w i{background:linear-gradient(90deg,var(--amb),#ffe0b0)}
+.dl span{font-size:.85rem;color:var(--mut);white-space:nowrap}.dl.w span{color:var(--tx)}
+.dr em{text-align:center;font-style:normal;color:var(--steel);font-size:.85rem}
+.verd{font:600 1.5rem Palatino,Georgia,serif;margin-top:18px;color:var(--amb)}
+@media(max-width:760px){.zw{grid-template-columns:1fr}.dh,.dr{grid-template-columns:1fr 90px 1fr}}

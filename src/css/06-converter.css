@@ -1,0 +1,13 @@
+/* ===== Convertisseur ===== */
+.conv{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:26px;max-width:880px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.tabs button{background:none;border:1px solid var(--line);color:var(--mut);padding:7px 14px;border-radius:99px;cursor:pointer;font:inherit}
+.tabs button[aria-pressed=true]{background:var(--steel);color:#06101f;border-color:var(--steel)}
+.row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:20px}
+.row label{display:flex;flex-direction:column;font-size:.85rem;color:var(--mut);gap:4px}
+input,select{background:#050a14;border:1px solid var(--line);color:var(--tx);padding:10px 12px;border-radius:var(--r);font:inherit;min-width:140px}
+.res{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px}
+.res div{background:#050a14;border-radius:var(--r);padding:12px 14px;border:1px solid var(--line)}
+.res b{display:block;font:600 1.35rem Palatino,Georgia,serif;overflow-wrap:anywhere}
+.res span{color:var(--mut);font-size:.85rem}
+.note{color:var(--mut);font-size:.88rem;margin-top:16px}

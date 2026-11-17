@@ -1,0 +1,12 @@
+/* ===== Loupe (Ctrl K) ===== */
+#ov{position:fixed;inset:0;z-index:50;background:#030610d9;backdrop-filter:blur(6px);display:none;padding:12vh 5vw}
+#ov.on{display:block}
+.box{max-width:640px;margin:auto;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 30px 80px #000a}
+.box input{width:100%;border:0;border-bottom:1px solid var(--line);border-radius:0;padding:18px 22px;font-size:1.15rem;background:transparent}
+.box input:focus{outline:0}
+#out{max-height:50vh;overflow:auto}
+#out a{display:block;padding:12px 22px;text-decoration:none;border-bottom:1px solid #ffffff0a}
+#out a:hover,#out a.sel{background:#ffffff10}
+#out small{color:var(--mut);display:block}
+#out em{font-style:normal;color:var(--amb);font-size:.8rem;margin-left:8px}
+.empty{padding:22px;color:var(--mut)}

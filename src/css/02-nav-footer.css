@@ -1,0 +1,13 @@
+/* ===== Barre de navigation, pied de page, liens de retour ===== */
+nav{position:fixed;inset:0 0 auto;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:14px 5vw;background:linear-gradient(#070c18e6,#070c1800)}
+nav b{font:600 1.2rem Palatino,Georgia,serif}
+nav button,.btn{background:#ffffff14;border:1px solid var(--line);color:var(--tx);padding:8px 14px;border-radius:99px;cursor:pointer;font:inherit;font-size:.9rem}
+nav button:hover,.btn:hover{border-color:var(--amb)}
+kbd{font:inherit;font-size:.75rem;color:var(--mut);border:1px solid var(--line);padding:0 6px;border-radius:4px;margin-left:8px}
+footer{padding:40px 5vw;color:var(--mut);font-size:.88rem;border-top:1px solid var(--line)}
+.logo{font:600 1.2rem Palatino,Georgia,serif;text-decoration:none}
+.back{display:inline-block;margin-bottom:22px;color:var(--steel);text-decoration:none}
+.back:hover{color:var(--amb)}
+.nl{display:flex;gap:22px}.nl a{text-decoration:none;color:var(--mut)}.nl a:hover{color:var(--amb)}
+@media(max-width:700px){.nl{display:none}}
+nav{backdrop-filter:blur(14px);background:linear-gradient(#070c18cc,#070c1800)}

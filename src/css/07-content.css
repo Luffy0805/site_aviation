@@ -1,0 +1,30 @@
+/* ===== Texte : fiches, tableaux, chiffres clés, liens, détails ===== */
+.fiche{display:grid;grid-template-columns:1fr 1fr;gap:34px;max-width:1100px}
+.banner{height:240px;border-radius:var(--r);margin-bottom:34px;background:linear-gradient(120deg,#16284a,#0d1628) center/cover;max-width:1100px}
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;max-width:1100px;margin-bottom:40px}
+.nums div{border-top:2px solid var(--amb);padding-top:10px}
+.nums b{display:block;font:600 2.6rem/1 Palatino,Georgia,serif}
+.nums span{color:var(--mut);font-size:.88rem}
+.fiche h3{font-size:1.4rem;margin-bottom:14px}
+.tl{list-style:none;padding:0 0 0 18px;border-left:1px solid var(--line)}
+.tl li{position:relative;margin-bottom:14px;color:var(--mut)}
+.tl li::before{content:"";position:absolute;left:-23px;top:9px;width:9px;height:9px;border-radius:50%;background:var(--amb)}
+.tl b{color:var(--tx)}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line)}
+th{color:var(--steel);font-weight:600}
+th.s{cursor:pointer}th.s:hover{color:var(--amb)}
+.tw{overflow-x:auto}
+.src{color:var(--mut);font-size:.85rem;margin-top:12px;max-width:1100px}
+@media(max-width:760px){.fiche{grid-template-columns:1fr}}
+.star{color:var(--amb);letter-spacing:1px;white-space:nowrap}
+.wide{max-width:1100px}
+details{background:var(--panel);border-left:3px solid var(--steel);border-radius:0 var(--r) var(--r) 0;margin-bottom:12px;padding:14px 20px;max-width:900px}
+details[open]{border-color:var(--amb)}
+summary{cursor:pointer;font:600 1.15rem Palatino,Georgia,serif}
+details p{color:var(--mut);margin-top:10px}
+a.xl{color:var(--amb);text-decoration:none;border-bottom:1px dotted var(--amb)}a.xl:hover{background:#ffb34722}
+.prose{max-width:75ch}.prose p{margin-bottom:12px;color:#c9d6ea}
+.blk{max-width:1100px;margin-top:44px}.blk h3{font-size:1.6rem;margin-bottom:16px}
+.nums b,.hi b,.bar span,td{font-variant-numeric:tabular-nums}
+.star b{color:var(--amb);font-weight:400}.star i{color:#34435f;font-style:normal}
